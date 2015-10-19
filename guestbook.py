@@ -42,7 +42,8 @@ def load_data():
 def index():
     """トップページ
     """
-    return render_template('index.html')
+    greeting_list = load_data()
+    return render_template('index.html', greeting_list=greeting_list)
 
 if __name__ == '__main__':
     application.run(NETWORK, PORT, debug=True)
