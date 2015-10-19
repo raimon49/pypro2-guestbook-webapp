@@ -45,5 +45,10 @@ def index():
     greeting_list = load_data()
     return render_template('index.html', greeting_list=greeting_list)
 
+@application.route('/post', methods=['POST'])
+def post():
+    # TODO
+    pass
+
 if __name__ == '__main__':
     application.run(NETWORK, PORT, debug=True)
