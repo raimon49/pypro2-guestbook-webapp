@@ -28,8 +28,8 @@
         <div class="entries-area">
             <h2>これまでの書き込み</h2>
             {% for greeting in greeting_list %}
-                <h3>{{ greeting.name }}　さんの書き込み({{ greeting.create_at }}):</h3>
-                <p>{{ greeting.comment }}</p>
+                <h3>{{ greeting.name }}　さんの書き込み({{ greeting.create_at|datetime_fmt }}):</h3>
+                <p>{{ greeting.comment|nl2br }}</p>
             {% endfor %}
         </div>
     </body>

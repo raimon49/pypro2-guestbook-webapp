@@ -58,6 +58,17 @@ def post():
 
     return redirect('/')
 
+@application.template_filter('nl2br')
+def nl2br_filter(s):
+    """改行文字をbrタグに置き換えるテンプレートフィルタ
+    """
+    return escape(s).replace('\n', Markup('<br>'))
+
+@application.template_filter('datetime_fmt')
+def datetime_fmt_filter(dt):
+    """datetimeオブジェクトを見易い表示にするテンプレートフィルタ
+    """
+    return dt.strftime('%Y-%m-%d %H:%M:%S')
 
 if __name__ == '__main__':
     application.run(NETWORK, PORT, debug=True)
