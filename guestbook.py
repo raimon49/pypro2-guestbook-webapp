@@ -5,7 +5,7 @@ import os
 from datetime import datetime
 from flask import Flask, request, render_template, redirect, escape, Markup
 
-DATA_FILE = 'guestbook.dat'
+DATA_FILE = 'guestbook'
 NETWORK = '127.0.0.1'
 PORT = 8000
 
