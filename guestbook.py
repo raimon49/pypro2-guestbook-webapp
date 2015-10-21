@@ -2,6 +2,7 @@
 
 import shelve
 import os
+from datetime import datetime
 from flask import Flask, request, render_template, redirect, escape, Markup
 
 DATA_FILE = 'guestbook.dat'
@@ -47,8 +48,16 @@ def index():
 
 @application.route('/post', methods=['POST'])
 def post():
-    # TODO
-    pass
+    """投稿用URL
+    """
+    name = request.form.get('name')
+    comment = request.form.get('comment')
+    create_at = datetime.now()
+
+    save_data(name, comment, create_at)
+
+    return redirect('/')
+
 
 if __name__ == '__main__':
     application.run(NETWORK, PORT, debug=True)
