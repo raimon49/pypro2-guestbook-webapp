@@ -9,4 +9,8 @@ setup(
     install_requires=[
         'Flask',
     ],
+    entry_points="""
+        [console_scripts]
+        guestbook = guestbook:main
+    """
 )
