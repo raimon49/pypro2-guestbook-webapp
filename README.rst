@@ -19,7 +19,9 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
 インストールと起動方法
 ======================
 
-リポジトリからコードを取得し、その下にvirtualenv環境を用意します::
+リポジトリからコードを取得し、その下にvirtualenv環境を用意します。
+
+.. code-block:: bash
 
     $ git clone git@github.com:raimon49/pypro2-guestbook-webapp.git
     $ cd pypro2-guestbook-webapp
@@ -36,6 +38,8 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
 ------------------
 
 1. チェックアウトする
-2. 以下の手順でインストールする::
+2. 以下の手順でインストールする
+
+.. code-block:: bash
 
     $ (venv-edit) pip install -e .
