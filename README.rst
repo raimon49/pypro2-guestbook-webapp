@@ -25,11 +25,11 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
 
     $ git clone git@github.com:raimon49/pypro2-guestbook-webapp.git
     $ cd pypro2-guestbook-webapp
-    $ pyenv virtualenv 2.7.9 venv-edit
-    $ pyenv activate venv-edit
-    $ (venv-edit) pyenv rehash
-    $ (venv-edit) pip install -U pip && pip install .
-    $ (venv-edit) guestbook
+    $ pyenv virtualenv 2.7.9 venv-guestbook
+    $ pyenv activate venv-guestbook
+    $ (venv-guestbook) pyenv rehash
+    $ (venv-guestbook) pip install -U pip && pip install .
+    $ (venv-guestbook) guestbook
 
 開発手順
 ========
@@ -42,4 +42,8 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
 
 .. code-block:: bash
 
+    $ pyenv virtualenv 2.7.9 venv-edit
+    $ pyenv activate venv-edit
+    $ (venv-edit) pyenv rehash
+    $ (venv-guestbook) pip install -U pip
     $ (venv-edit) pip install -e .
