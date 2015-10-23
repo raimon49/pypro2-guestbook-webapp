@@ -45,5 +45,5 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
     $ pyenv virtualenv 2.7.9 venv-edit
     $ pyenv activate venv-edit
     $ (venv-edit) pyenv rehash
-    $ (venv-guestbook) pip install -U pip
+    $ (venv-edit) pip install -U pip
     $ (venv-edit) pip install -e .
