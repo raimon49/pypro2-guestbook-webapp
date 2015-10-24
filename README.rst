@@ -19,9 +19,7 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
 インストールと起動方法
 ======================
 
-リポジトリからコードを取得し、その下にvirtualenv環境を用意します。
-
-.. code-block:: bash
+リポジトリからコードを取得し、その下にvirtualenv環境を用意します。 ::
 
     $ git clone git@github.com:raimon49/pypro2-guestbook-webapp.git
     $ cd pypro2-guestbook-webapp
@@ -38,9 +36,7 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
 ------------------
 
 1. チェックアウトする
-2. 以下の手順でインストールする
-
-.. code-block:: bash
+2. 以下の手順でインストールする ::
 
     $ pyenv virtualenv 2.7.9 venv-edit
     $ pyenv activate venv-edit
