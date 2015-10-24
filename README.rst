@@ -47,3 +47,17 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
     $ (venv-edit) pyenv rehash
     $ (venv-edit) pip install -U pip
     $ (venv-edit) pip install -e .
+
+依存ライブラリ変更時
+--------------------
+
+1. ``setup.py`` の ``install_requires`` を更新する
+2. 以下の手順で環境を更新する ::
+
+    $ pyenv uninstall venv-edit
+    $ pyenv activate venv-edit
+    $ (venv-edit) pyenv rehash
+    $ (venv-edit) pip install -U pip
+    $ (venv-edit) pip install -e .
+
+3. ``setup.py`` をリポジトリにコミットする
