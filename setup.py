@@ -6,7 +6,7 @@ def read_file(filename):
     basepath = os.path.dirname(os.path.dirname(__file__))
     filepath = os.path.join(basepath, filename)
     if os.path.exists(filepath):
-        return open(filepath.read())
+        return open(filepath).read()
     else:
         return ''
 
@@ -25,11 +25,11 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
-    ]
+    ],
     packages=find_packages(),
     include_package_data=True,
     keywords=['web', 'guestbook'],
-    License='BSD License',
+    license='BSD License',
     install_requires=[
         'Flask',
     ],
