@@ -59,5 +59,6 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
     $ (venv-edit) pyenv rehash
     $ (venv-edit) pip install -U pip
     $ (venv-edit) pip install -e .
+    $ (venv-edit) pip freeze > requirements.txt
 
 3. ``setup.py`` をリポジトリにコミットする
