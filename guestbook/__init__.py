@@ -80,10 +80,9 @@ def datetime_fmt_filter(dt):
     """
     return dt.strftime('%Y-%m-%d %H:%M:%S')
 
-def main():
+def main(debug=False):
     args = parse_args()
-    application.run(NETWORK, PORT)
+    application.run(NETWORK, PORT, debug=debug)
 
 if __name__ == '__main__':
-    args = parse_args()
-    application.run(NETWORK, PORT, debug=True)
+    main(debug=True)
