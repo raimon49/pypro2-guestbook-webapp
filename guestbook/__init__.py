@@ -2,6 +2,7 @@
 
 import shelve
 import os
+import argparse
 from datetime import datetime
 from flask import Flask, request, render_template, redirect, escape, Markup
 
@@ -11,6 +12,15 @@ PORT = 8000
 
 application = Flask(__name__)
 
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description='A guestbook web application.')
+    parser.add_argument('-v', '--version',
+                        action='version',
+                        version='%(prog)s 1.0.0')
+
+    return parser.parse_args()
 
 def save_data(name, comment, create_at):
     """投稿データを保存します
@@ -71,7 +81,9 @@ def datetime_fmt_filter(dt):
     return dt.strftime('%Y-%m-%d %H:%M:%S')
 
 def main():
+    args = parse_args()
     application.run(NETWORK, PORT)
 
 if __name__ == '__main__':
+    args = parse_args()
     application.run(NETWORK, PORT, debug=True)
