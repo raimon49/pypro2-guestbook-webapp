@@ -18,7 +18,7 @@ def parse_args():
         description='A guestbook web application.')
     parser.add_argument('-v', '--version',
                         action='version',
-                        version='%(prog)s 1.0.0')
+                        version='guestbook 1.0.0')
     parser.add_argument('-n', '--network',
                         default=NETWORK)
     parser.add_argument('-p', '--port',
