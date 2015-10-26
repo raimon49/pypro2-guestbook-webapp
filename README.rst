@@ -29,6 +29,19 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
     $ (venv-guestbook) pip install -U pip && pip install .
     $ (venv-guestbook) guestbook
 
+コマンドラインオプション ::
+
+    $ guestbook -h
+    usage: guestbook [-h] [-v] [-n NETWORK] [-p PORT]
+    
+    A guestbook web application.
+    
+    optional arguments:
+      -h, --help            show this help message and exit
+      -v, --version         show program's version number and exit
+      -n NETWORK, --network NETWORK
+      -p PORT, --port PORT
+
 開発手順
 ========
 
