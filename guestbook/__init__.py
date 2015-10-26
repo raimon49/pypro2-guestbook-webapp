@@ -19,6 +19,11 @@ def parse_args():
     parser.add_argument('-v', '--version',
                         action='version',
                         version='%(prog)s 1.0.0')
+    parser.add_argument('-n', '--network',
+                        default=NETWORK)
+    parser.add_argument('-p', '--port',
+                        type=int,
+                        default=PORT)
 
     return parser.parse_args()
 
@@ -82,7 +87,9 @@ def datetime_fmt_filter(dt):
 
 def main(debug=False):
     args = parse_args()
-    application.run(NETWORK, PORT, debug=debug)
+    application.run(args.network,
+                    args.port,
+                    debug=debug)
 
 if __name__ == '__main__':
     main(debug=True)
