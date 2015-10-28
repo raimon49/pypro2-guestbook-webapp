@@ -27,6 +27,7 @@ def parse_args():
 
     return parser.parse_args()
 
+
 def save_data(name, comment, create_at):
     """投稿データを保存します
     """
@@ -45,6 +46,7 @@ def save_data(name, comment, create_at):
     database['greeting_list'] = greeting_list
     database.close()
 
+
 def load_data():
     """投稿されたデータを返します
     """
@@ -54,12 +56,14 @@ def load_data():
 
     return greeting_list
 
+
 @application.route('/')
 def index():
     """トップページ
     """
     greeting_list = load_data()
     return render_template('index.html', greeting_list=greeting_list)
+
 
 @application.route('/post', methods=['POST'])
 def post():
@@ -73,17 +77,20 @@ def post():
 
     return redirect('/')
 
+
 @application.template_filter('nl2br')
 def nl2br_filter(s):
     """改行文字をbrタグに置き換えるテンプレートフィルタ
     """
     return escape(s).replace('\n', Markup('<br>'))
 
+
 @application.template_filter('datetime_fmt')
 def datetime_fmt_filter(dt):
     """datetimeオブジェクトを見易い表示にするテンプレートフィルタ
     """
     return dt.strftime('%Y-%m-%d %H:%M:%S')
+
 
 def main(debug=False):
     args = parse_args()
