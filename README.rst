@@ -2,6 +2,9 @@
 ゲストブックアプリ
 ==================
 
+.. image:: https://travis-ci.org/raimon49/pypro2-guestbook-webapp.svg?branch=master
+    :target: https://travis-ci.org/raimon49/pypro2-guestbook-webapp
+
 目的
 ====
 
