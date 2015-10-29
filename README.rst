@@ -63,7 +63,7 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
 依存ライブラリ変更時
 --------------------
 
-1. ``setup.py`` の ``install_requires`` を更新する
+1. ``setup.py`` の ``install_requires`` と ``requirements.in`` を更新する
 2. 以下の手順で環境を更新する ::
 
     $ pyenv uninstall venv-edit
@@ -73,5 +73,6 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
     $ (venv-edit) pip install -e .
     $ (venv-edit) pip-compile requirements.in
     $ (venv-edit) pip-compile dev-requirements.in
+    $ (venv-edit) pip-sync dev-requirements.txt
 
 3. ``setup.py`` をリポジトリにコミットする
