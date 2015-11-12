@@ -21,5 +21,5 @@ pytest-cache==1.0         # via pytest-pep8
 pytest-pep8==1.0.6
 pytest==2.8.2             # via pytest-cache, pytest-pep8
 six==1.10.0               # via pip-tools
-werkzeug==0.10.4          # via flask
+werkzeug==0.11.2          # via flask
 wheel==0.26.0
