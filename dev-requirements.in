@@ -5,3 +5,4 @@ docutils
 wheel
 pip-tools
 pytest-pep8
+pytest-pythonpath
