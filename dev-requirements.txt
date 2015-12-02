@@ -6,7 +6,7 @@
 #
 apipkg==1.4               # via execnet
 autopep8==1.2.1
-click==5.1                # via pip-tools
+click==6.2                # via pip-tools
 docutils==0.12
 execnet==1.4.1            # via pytest-cache
 first==2.0.1              # via pip-tools
@@ -15,8 +15,8 @@ itsdangerous==0.24        # via flask
 jinja2==2.8               # via flask
 markupsafe==0.23          # via jinja2
 pep8==1.6.2               # via autopep8, pytest-pep8
-pip-tools==1.1.6
-py==1.4.30                # via pytest
+pip-tools==1.2.0
+py==1.4.31                # via pytest
 pytest-cache==1.0         # via pytest-pep8
 pytest-pep8==1.0.6
 pytest-pythonpath==0.7
