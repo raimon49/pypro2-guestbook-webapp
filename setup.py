@@ -13,7 +13,7 @@ def read_file(filename):
 
 setup(
     name='raimon49.guestbook',
-    version='1.1.0',
+    version='1.1.1',
     description='A guestbook web application.',
     long_description=read_file('README.rst'),
     author='raimon49',
