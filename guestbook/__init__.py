@@ -4,7 +4,9 @@ import shelve
 import os
 import argparse
 from datetime import datetime
-from flask import Flask, request, render_template, redirect, escape, Markup
+from flask import (Flask, request, render_template, redirect,
+                   escape, Markup, jsonify)
+from bpmappers import Mapper, RawField, ListDelegateField
 
 DATA_FILE = 'guestbook'
 NETWORK = '127.0.0.1'
@@ -57,6 +59,15 @@ def load_data():
     return greeting_list
 
 
+class GreetingMapper(Mapper):
+    name = RawField()
+    comment = RawField()
+
+
+class GreetingListMapper(Mapper):
+    greeting_list = ListDelegateField(GreetingMapper)
+
+
 @application.route('/')
 def index():
     """トップページ
@@ -76,6 +87,17 @@ def post():
     save_data(name, comment, create_at)
 
     return redirect('/')
+
+
+@application.route('/api/')
+def api_index():
+    """コメント一覧をJSONで返すWeb API
+    """
+    greeting_list = load_data()
+    result_dict = GreetingListMapper(
+        {'greeting_list': greeting_list}).as_dict()
+
+    return jsonify(**result_dict)
 
 
 @application.template_filter('nl2br')
