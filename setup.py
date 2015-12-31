@@ -32,6 +32,7 @@ setup(
     license='BSD License',
     install_requires=[
         'Flask',
+        'bpmappers',
     ],
     entry_points="""
         [console_scripts]
