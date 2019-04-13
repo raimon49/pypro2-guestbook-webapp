@@ -15,7 +15,7 @@ execnet==1.5.0            # via pytest-cache
 flask==1.0.2
 funcsigs==1.0.2           # via pytest
 itsdangerous==1.1.0       # via flask
-jinja2==2.10              # via flask
+jinja2>=2.10.1            # via flask
 markupsafe==1.1.0         # via jinja2
 more-itertools==5.0.0     # via pytest
 pathlib2==2.3.3           # via pytest
