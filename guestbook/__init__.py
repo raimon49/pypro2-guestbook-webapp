@@ -8,6 +8,7 @@ from flask import (Flask, request, render_template, redirect,
                    escape, Markup, jsonify)
 from bpmappers import Mapper, RawField, ListDelegateField
 
+
 DATA_FILE = 'guestbook'
 NETWORK = '127.0.0.1'
 PORT = 8000
@@ -119,6 +120,7 @@ def main(debug=False):
     application.run(args.network,
                     args.port,
                     debug=debug)
+
 
 if __name__ == '__main__':
     main(debug=True)
