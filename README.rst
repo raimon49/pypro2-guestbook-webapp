@@ -18,11 +18,10 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
 ツールのバージョン
 ==================
 
-:Python:     2.7.9
-:Flask:     0.10.1
+:Python:     3.8.6
+:Flask:      1.1.2
 :bpmappers:  0.8.2
-:pip:        7.1.2
-:pyenv:   20141211
+:pip:       21.0.2
 
 インストールと起動方法
 ======================
@@ -31,11 +30,11 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
 
     $ git clone git@github.com:raimon49/pypro2-guestbook-webapp.git
     $ cd pypro2-guestbook-webapp
-    $ pyenv virtualenv 2.7.9 venv-guestbook
-    $ pyenv activate venv-guestbook
-    $ (venv-guestbook) pyenv rehash
-    $ (venv-guestbook) pip install -U pip && pip install .
-    $ (venv-guestbook) guestbook
+    $ python3 -m venv venv/venv-pypro2-guestbook-webapp
+    $ source venv/venv-pypro2-guestbook-webapp/bin/activate
+    $ (venv-pypro2-guestbook-webapp) pyenv rehash
+    $ (venv-pypro2-guestbook-webapp) pip install -U pip && pip install .
+    $ (venv-pypro2-guestbook-webapp) guestbook
 
 コマンドラインオプション ::
 
