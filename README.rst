@@ -58,8 +58,8 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
 1. チェックアウトする
 2. 以下の手順でインストールする ::
 
-    $ pyenv virtualenv 2.7.9 venv-edit
-    $ pyenv activate venv-edit
+    $ python3 -m venv venv/venv-edit
+    $ source venv/venv-edit/bin/activate
     $ (venv-edit) pyenv rehash
     $ (venv-edit) pip install -U pip
     $ (venv-edit) pip install -e .
@@ -70,9 +70,9 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
 1. ファイル ``setup.py`` の ``install_requires`` とファイル ``requirements.in`` を更新する
 2. 以下の手順で環境を更新する ::
 
-    $ pyenv uninstall venv-edit
-    $ pyenv activate venv-edit
-    $ (venv-edit) pyenv rehash
+    $ rm -rf venv/venv-edit
+    $ python3 -m venv venv/venv-edit
+    $ source venv/venv-edit/bin/activate
     $ (venv-edit) pip install -U pip
     $ (venv-edit) pip install -e .
     $ (venv-edit) pip-compile requirements.in
