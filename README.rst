@@ -4,6 +4,7 @@
 
 .. image:: https://travis-ci.org/raimon49/pypro2-guestbook-webapp.svg?branch=master
     :target: https://travis-ci.org/raimon49/pypro2-guestbook-webapp
+    :alt: TravisCI Status
 .. image:: https://requires.io/github/raimon49/pypro2-guestbook-webapp/requirements.svg?branch=master
      :target: https://requires.io/github/raimon49/pypro2-guestbook-webapp/requirements/?branch=master
      :alt: Requirements Status
