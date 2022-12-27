@@ -42,14 +42,14 @@ pycodestyle==2.7.0
     #   pytest-pycodestyle
 pyparsing==2.4.7
     # via packaging
-pytest-pycodestyle==2.2.0
-    # via -r dev-requirements.in
-pytest-pythonpath==0.7.3
-    # via -r dev-requirements.in
 pytest==6.2.2
     # via
     #   pytest-pycodestyle
     #   pytest-pythonpath
+pytest-pycodestyle==2.2.0
+    # via -r dev-requirements.in
+pytest-pythonpath==0.7.3
+    # via -r dev-requirements.in
 toml==0.10.2
     # via
     #   autopep8
@@ -57,7 +57,7 @@ toml==0.10.2
     #   pytest
 werkzeug==1.0.1
     # via flask
-wheel==0.36.2
+wheel==0.38.1
     # via -r dev-requirements.in
 
 # The following packages are considered to be unsafe in a requirements file:
