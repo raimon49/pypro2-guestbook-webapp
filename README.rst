@@ -77,4 +77,4 @@ Webブラウザでコメントを投稿するWebアプリケーションの練�
     $ (venv-edit) pip-compile dev-requirements.in
     $ (venv-edit) pip-sync dev-requirements.txt
 
-3. ``setup.py`` をリポジトリにコミットする
+3. ファイル ``setup.py`` と ``requirements.*`` / ``dev-requirements.*`` の変更をリポジトリにコミットする
