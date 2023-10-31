@@ -59,7 +59,7 @@ toml==0.10.2
     #   autopep8
     #   pep517
     #   pytest
-werkzeug==2.3.3
+werkzeug==3.0.1
     # via flask
 wheel==0.38.1
     # via -r dev-requirements.in
