@@ -30,8 +30,10 @@ markupsafe==2.1.2
     # via
     #   jinja2
     #   werkzeug
-packaging==20.9
-    # via pytest
+packaging==26.0
+    # via
+    #   pytest
+    #   wheel
 pep517==0.10.0
     # via pip-tools
 pip-tools==6.0.1
@@ -44,8 +46,6 @@ pycodestyle==2.7.0
     # via
     #   autopep8
     #   pytest-pycodestyle
-pyparsing==2.4.7
-    # via packaging
 pytest==6.2.2
     # via
     #   pytest-pycodestyle
@@ -61,7 +61,7 @@ toml==0.10.2
     #   pytest
 werkzeug==3.0.6
     # via flask
-wheel==0.38.1
+wheel==0.46.2
     # via -r dev-requirements.in
 
 # The following packages are considered to be unsafe in a requirements file:
